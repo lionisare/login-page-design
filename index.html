@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Search Animation</title>
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- remixicon cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- ===== header =====  -->
+    <header class="header" id="header">
+        <nav class="navbar container" id="navbar">
+            <a href="#" class="navbar__logo">Logo</a>
+            <div class="navbar__menu" id="navbar-menu">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">About Us</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Services</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Featured</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Contact Me</a>
+                    </li>
+                </ul>
+                <!-- btn close  -->
+                <div class="btn__close" id="btn-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <div class="navbar__action">
+                <!-- btn search  -->
+                <i class="ri-search-line btn__search" id="btn-search"></i>
+                <!-- btn login  -->
+                <i class="ri-user-line btn__login" id="btn-login"></i>
+                <!-- btn menu  -->
+                <div class="btn__menu" id="btn-menu">
+                    <i class="ri-menu-line btn__menu"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ===== search =====  -->
+    <div class="search" id="search">
+        <form action="#" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" class="search__input" placeholder="Keyword">
+        </form>
+        <i class="ri-close-line search__close__icon" id="btn-search-close"></i>
+    </div>
+    <!-- ===== login =====  -->
+    <div class="login" id="login">
+        <form action="" class="login__form">
+            <h2 class="login__title">Log In</h2>
+            <div class="form__group">
+                <div>
+                    <label for="email" class="login__label">Email</label>
+                    <input type="email" name="email" id="email" class="login__input" placeholder="Write your email"
+                        required>
+                </div>
+                <div>
+                    <label for="password" class="login__label">Password</label>
+                    <input type="password" name="password" id="password" class="login__input"
+                        placeholder="Enter your password" required>
+                </div>
+            </div>
+            <div>
+                <p class="login__signUp">Create any account ?
+                    <a href="#">Sign Up</a>
+                </p>
+                <a href="#" class="forgot__password">Forgot Password ?</a>
+                <button type="submit" class="login__button">Log in</button>
+            </div>
+        </form>
+        <i class="ri-close-line login__close__icon" id="btn-login-close"></i>
+    </div>
+    <!-- ===== main =====  -->
+    <main class="main">
+        <img src="images/image.jpg" alt="image" class="bg__image">
+    </main>
+
+    <!-- ======main js======  -->
+    <script src="main.js"></script>
+</body>
+
+</html>
